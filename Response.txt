@@ -1,0 +1,6 @@
+res.json({
+  totalBlogs,
+  longestBlog,
+  blogsWithPrivacy: blogsWithPrivacy.length,
+  uniqueBlogTitles
+});

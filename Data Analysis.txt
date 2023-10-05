@@ -1,0 +1,9 @@
+const _ = require('lodash');
+
+// Assuming you have the 'data' array containing fetched blog data
+const data = response.data; // Replace this with your actual response data
+
+const totalBlogs = data.length;
+const longestBlog = _.maxBy(data, 'title.length').title;
+const blogsWithPrivacy = data.filter(blog => blog.title.toLowerCase().includes('privacy'));
+const uniqueBlogTitles = _.uniqBy(data, 'title').map(blog => blog.title);

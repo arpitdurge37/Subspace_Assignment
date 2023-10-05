@@ -1,0 +1,7 @@
+app.get('/api/blog-search', (req, res) => {
+  const { query } = req.query;
+  const filteredBlogs = data.filter(blog =>
+    blog.title.toLowerCase().includes(query.toLowerCase())
+  );
+  res.json(filteredBlogs);
+});
